@@ -9,10 +9,10 @@ public class Car
     private String make;
     private String model;
     private int year;
-    private int plate;
-    private int chassisCode;
+    private String plate;
+    private String chassisCode;
 
-    public Car(int ID, String make, String model, int year, int plate, int chassisCode)
+    public Car(int ID, String make, String model, int year, String plate, String chassisCode)
     {
         this.ID = ID;
         this.make = make;
@@ -67,22 +67,22 @@ public class Car
         this.year = year;
     }
 
-    public int getPlate()
+    public String getPlate()
     {
         return plate;
     }
 
-    public void setPlate(int plate)
+    public void setPlate(String plate)
     {
         this.plate = plate;
     }
 
-    public int getChassisCode()
+    public String  getChassisCode()
     {
         return chassisCode;
     }
 
-    public void setChassisCode(int chassisCode)
+    public void setChassisCode(String chassisCode)
     {
         this.chassisCode = chassisCode;
     }

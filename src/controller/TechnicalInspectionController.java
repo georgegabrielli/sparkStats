@@ -5,4 +5,5 @@ package controller;
  */
 public class TechnicalInspectionController implements IController
 {
+
 }
