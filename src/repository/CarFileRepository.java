@@ -19,6 +19,7 @@ public class CarFileRepository implements IRepository
 
     public CarFileRepository()
     {
+        this.cars = new HashMap<>();
         readFile();
     }
 
@@ -67,8 +68,7 @@ public class CarFileRepository implements IRepository
         {
             throw new IllegalArgumentException("Please give a valid Input!");
         }
-        else
-            return Optional.ofNullable(cars.putIfAbsent(newCar.getID(), newCar));
+        else return Optional.ofNullable(cars.putIfAbsent(newCar.getID(), newCar));
     }
 
     public Map<Integer, Car> getCars()
