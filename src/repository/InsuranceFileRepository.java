@@ -41,7 +41,7 @@ public class InsuranceFileRepository implements IRepository
                         int ID = Integer.parseInt(attributes.get(0));
                         int carID = Integer.parseInt(attributes.get(1));
                         String issuer = attributes.get(2);
-                        SimpleDateFormat parser = new SimpleDateFormat("dd.MM.YYYY");
+                        SimpleDateFormat parser = new SimpleDateFormat("dd/MM/yyy");
                         Date expiration = parser.parse(attributes.get(3));
                         Date start = parser.parse(attributes.get(4));
 
