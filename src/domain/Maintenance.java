@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Date;
+
 /**
  * Created by gobi on 3/19/17.
  */
@@ -10,18 +12,30 @@ public class Maintenance
     private String description;
     private long sum;
     private String currency;
+    private Date date;
 
     public Maintenance()
     {
     }
 
-    public Maintenance(int ID, int carID, String description, long sum, String currency)
+    public Maintenance(int ID, int carID, String description, long sum, String currency, Date date)
     {
         this.ID = ID;
         this.carID = carID;
         this.description = description;
         this.sum = sum;
         this.currency = currency;
+        this.date = date;
+    }
+
+    public Date getDate()
+    {
+        return date;
+    }
+
+    public void setDate(Date date)
+    {
+        this.date = date;
     }
 
     public int getID()
